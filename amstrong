@@ -1,0 +1,30 @@
+package uniflow2;
+import java.util.Scanner;
+public class amstrom_no {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int c=0,sum=0,r;
+		int temp=n;
+	      while(n>0) {
+	    	 n=n/10;
+	    	  c++;
+	      }
+	      n=temp;
+	while(n>0)  {
+		r=n%10;
+	      sum+=(int)Math.pow(r,c);
+	      n=n/10;
+	      
+	}
+	if (sum==temp) {
+		System.out.println("amstrom no");
+	}
+	else
+		System.out.println("not armstrong no");
+	sc.close();
+	}
+
+}
