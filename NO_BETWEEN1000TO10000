@@ -1,0 +1,21 @@
+package uniflow2;
+
+public class no_between_1000_to_10000 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+int i,n;
+for (i=1000;i<=10000;i++) {
+for(n=1;n<10;n++) {
+	if (i%n!=n-1) 
+		break;
+	
+}
+if (n==11)
+System.out.println(i);
+
+	}
+
+}
+}
